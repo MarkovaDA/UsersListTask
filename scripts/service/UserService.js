@@ -3,18 +3,6 @@ class UserService extends DataService{
         super();
     }
 
-
-    getUserInfoById(id, callback){
-        /*имитация запроса к серверу на получение информации о юзере*/
-        $.getJSON('server/description.json', (data) => {
-
-            const info = data.filter((obj) => {
-                return obj['id'] === id;
-            })[0];
-
-            callback.call(null, info);
-        });
-    }
     getUserById(id) {
         return new Promise((resolve, reject) => {
             $.getJSON('server/description.json', (data) => {

@@ -15,19 +15,14 @@ class User extends EventEmitter {
              <li class="mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                   <i class="material-icons  mdl-list__item-avatar">person</i>
-                  ${this.user.firstname} ${this.user.lastname}
-                </span>
-                <span class="mdl-list__item-secondary-action">
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-close">
-                        Подробнее
-                    </button>
+                    ${this.user.firstname} ${this.user.lastname}
                 </span>
              </li>
         `);
     }
 
     bindEvents() {
-        this.root.find('.btn-close').on('click', () => {
+        this.root.on('click', () => {
             this.emit('SELECT_ITEM', this.user.id);
         });
     }
