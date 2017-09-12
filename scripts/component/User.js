@@ -1,29 +1,28 @@
 class User extends EventEmitter {
-    constructor(userData) {
-        super();
+  constructor(userData) {
+    super();
 
-        this.user = userData;
-        this.root = null;
+    this.user = userData;
+    this.root = null;
 
-        this.initDOM();
-        this.bindEvents();
-    }
+    this.initDOM();
+    this.bindEvents();
+  }
 
-    initDOM() {
-        //TODO click на самом item, не по кнопке
-        this.root = $(`
-             <li class="mdl-list__item">
-                <span class="mdl-list__item-primary-content">
-                  <i class="material-icons  mdl-list__item-avatar">person</i>
-                    ${this.user.firstname} ${this.user.lastname}
-                </span>
-             </li>
-        `);
-    }
+  initDOM() {
+    this.root = $(`
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons  mdl-list__item-avatar">person</i>
+        ${this.user.firstname} ${this.user.lastname}
+        </span>
+      </li>
+    `);
+  }
 
-    bindEvents() {
-        this.root.on('click', () => {
-            this.emit('SELECT_ITEM', this.user.id);
-        });
-    }
+  bindEvents() {
+    this.root.on('click', () => {
+      this.emit('SELECT_ITEM', this.user.id);
+    });
+  }
 }
