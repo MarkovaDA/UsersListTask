@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FancyBox</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css"/>
+  <script>
+    $(document).ready(function(){
+
+      $("a").fancybox({
+        'transitionIn'	:	'elastic',
+        'transitionOut'	:	'elastic',
+        'speedIn'		:	600,
+        'speedOut'		:	200,
+        'overlayShow'	:	false
+      }).trigger('click');
+
+    });
+  </script>
+</head>
+<body>
+    <a href="#feedback" style="display:none;">Show modal</a>
+    <div id="feedback" style="display:none; border: 1px solid red; width: 640px; height: 480px;">
+      <p>Модальное окно</p>
+    </div>
+</body>
+</html>

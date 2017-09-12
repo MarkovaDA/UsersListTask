@@ -6,28 +6,34 @@ class Popup {
         this.bindEvents();
     }
 
-    initDOM(){
-        //TODO: взять другой диалог для использования, fancyBox
+    initDOM() {
         this.root = $(`
-            <dialog class="mdl-dialog">
+             <a href = "#fancybox" style="display:none;">Show modal</a>
+             
+             <div class="mdl-dialog" id="fancybox" style="display:none;">
                 <div class="mdl-dialog__title">Информация</div>
                 <div class="mdl-dialog__content">
                      <table class="info"></table>
                 </div>
-                <div class="mdl-dialog__actions mdl-dialog__actions">
-                    <button type="button" class="mdl-button close">ОК</button>                  
-                </div>
-            </dialog>
+            </div>
         `);
-
-        this.dialog = this.root.get(0);
     }
 
     show(info) {
         //обновляем контент для отображения
         this.updateView(info);
         //показываем диалоговое окно
-        this.dialog.showModal();
+        this.fancyBox().trigger('click');
+    }
+
+    fancyBox() {
+      return $('a').fancybox({
+        'transitionIn'	:	'elastic',
+        'transitionOut'	:	'elastic',
+        'speedIn'		:	600,
+        'speedOut'		:	200,
+        'hideOnContentClick'	:	true
+      })
     }
 
     updateView(info) {
