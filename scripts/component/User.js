@@ -13,8 +13,8 @@ class User extends EventEmitter {
     this.root = $(`
       <li class="mdl-list__item">
         <span class="mdl-list__item-primary-content">
-        <i class="material-icons  mdl-list__item-avatar">person</i>
-        ${this.user.firstname} ${this.user.lastname}
+          <i class="material-icons  mdl-list__item-avatar">person</i>
+          ${this.user.firstname} ${this.user.lastname}
         </span>
       </li>
     `);

@@ -32,6 +32,7 @@ class App {
   bindEvents() {
     //клик на пользователе -- отображение подробной информации по id
     this.userList.on('SHOW_ITEM', (id) => {
+      //получаем описание пользователя по его id
       this.userService.getUserById(id).then((info) => {
         this.popup.show(info);
       }, (error) => {
