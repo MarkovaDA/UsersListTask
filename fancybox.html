@@ -3,27 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <title>FancyBox</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.min.css"/>
-  <script>
-    $(document).ready(function(){
 
-      $("a").fancybox({
-        'transitionIn'	:	'elastic',
-        'transitionOut'	:	'elastic',
-        'speedIn'		:	600,
-        'speedOut'		:	200,
-        'overlayShow'	:	false
-      }).trigger('click');
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    });
-  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            //instance.setContent();//ему передается разметка
+            //instance.close(); //и когда нужно, у инстанса вызываем close()
+            //instance.open()   //или open()
+
+            $('button').click(function () {
+                 //$.fancybox.getInstance();
+                 var instance  =
+                     $.fancybox;
+                instance.open('<div id = "hidden-content"><h2>Hello!</h2><p>You are awesome!</p></div>');
+                instance.close();
+                /*$.fancybox.open({
+                    src  : '#hidden-content',
+                    type : 'inline',
+                    opts : {
+                        afterShow : function( instance, current ) {
+                            console.info( 'done!' );
+                        }
+                    }
+                });*/
+            });
+        });
+    </script>
+    <style>
+        #hidden-content {
+            /* Custom styling */
+            max-width: 550px;
+            border-radius: 4px;
+
+            /* Custom transition - slide from top*/
+            transform: translateY(-50px);
+            transition: all .33s;
+        }
+
+        .fancybox-slide--current #hidden-content {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <a href="#feedback" style="display:none;">Show modal</a>
-    <div id="feedback" style="display:none; border: 1px solid red; width: 640px; height: 480px;">
-      <p>Модальное окно</p>
+
+
+<button>Открыть модальное окно</button>
+
+<div style="display: none;" id="hidden-content">
+    <h2>Hello!</h2>
+    <p>This is animated content!</p>
+</div>
+<!--<div class="grid">
+
+    <p>
+        #3 - Custom options: display default close button and disable touch
+    </p>
+
+    <p>
+        <a data-fancybox data-options='{"src": "#hidden-content-c", "touch": false, "smallBtn" : false}' href="javascript:;" class="btn">Open demo</a>
+    </p>
+
+    <div style="display: none;max-width:500px;" id="hidden-content-c">
+        <h2>¡Hola!</h2>
+        <p>Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
     </div>
+</div> -->
+
+<!--<div class="grid">
+
+    <p>
+        #4 - Modal window
+    </p>
+
+    <p>
+        <a data-fancybox data-options='{"src": "#hidden-content-d", "modal": true}' href="javascript:;" class="btn">Open demo</a>
+    </p>
+
+    <div style="display: none;max-width:600px;" id="hidden-content-d">
+        <h2>I'm a modal!</h2>
+        <p>You can close me only by pressing custom button below.</p>
+        <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+        <p><button data-fancybox-close class="btn">Close me</button></p>
+    </div>
+</div> -->
 </body>
 </html>

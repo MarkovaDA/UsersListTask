@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="565f7b9c-358c-48b5-89d8-0de53f223653" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/dist/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/dist/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/dist/jquery.fancybox.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/dist/jquery.fancybox.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/docs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/css/core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/css/fullscreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/css/slideshow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/css/thumbs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/fullscreen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/guestures.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/hash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/slideshow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fancybox3/src/js/thumbs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/component/App.js" afterPath="$PROJECT_DIR$/scripts/component/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fancybox.html" afterPath="$PROJECT_DIR$/fancybox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/component/Popup.js" afterPath="$PROJECT_DIR$/scripts/component/Popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/component/User.js" afterPath="$PROJECT_DIR$/scripts/component/User.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/service/UserService.js" afterPath="$PROJECT_DIR$/scripts/service/UserService.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/component/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -39,27 +49,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Popup.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Popup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/component/Popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
-                <marker date="1505814560953" expanded="true" signature="175:188" ph="..." />
-                <marker date="1505814560953" expanded="true" signature="189:370" ph="..." />
-                <marker date="1505814560953" expanded="true" signature="293:355" ph="..." />
-                <marker date="1505814560953" expanded="true" signature="813:889" ph="..." />
+                <marker date="1505937213658" expanded="true" signature="248:362" ph="..." />
+                <marker date="1505937213658" expanded="true" signature="382:464" ph="..." />
+                <marker date="1505937213658" expanded="true" signature="382:465" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/service/UserService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -67,10 +66,10 @@
       <file leaf-file-name="UserList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/component/UserList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="120">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding>
-                <marker date="1505215376876" expanded="true" signature="258:270" ph="..." />
+                <marker date="1505839089541" expanded="true" signature="258:270" ph="..." />
               </folding>
             </state>
           </provider>
@@ -79,12 +78,22 @@
       <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/component/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+            <state relative-caret-position="165">
+              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
-                <marker date="1505810917456" expanded="true" signature="237:444" ph="..." />
-                <marker date="1505810917456" expanded="true" signature="291:432" ph="..." />
+                <marker date="1505936582626" expanded="true" signature="237:444" ph="..." />
+                <marker date="1505936582626" expanded="true" signature="291:432" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/component/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,16 +139,16 @@
         <option value="$PROJECT_DIR$/fancybox/fancybox.js" />
         <option value="$PROJECT_DIR$/fancybox/mousewheel.js" />
         <option value="$PROJECT_DIR$/fancybox/fancybox.css" />
-        <option value="$PROJECT_DIR$/fancybox.html" />
         <option value="$PROJECT_DIR$/scripts/component/UserList.js" />
         <option value="$PROJECT_DIR$/scripts/EventEmitter.js" />
         <option value="$PROJECT_DIR$/scripts/service/DataService.js" />
         <option value="$PROJECT_DIR$/lodash/lodash.min.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scripts/service/UserService.js" />
+        <option value="$PROJECT_DIR$/fancybox.html" />
         <option value="$PROJECT_DIR$/scripts/component/App.js" />
         <option value="$PROJECT_DIR$/scripts/component/User.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/component/Popup.js" />
-        <option value="$PROJECT_DIR$/scripts/service/UserService.js" />
       </list>
     </option>
   </component>
@@ -158,10 +167,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="53" />
+    <option name="y" value="-4" />
+    <option name="width" value="1313" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,36 +204,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="UserService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UserService" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UsersListTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UsersListTask" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="UserService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UserService" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UsersListTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UsersListTask" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="UserService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UserService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="UserService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UserService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="UserService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UserService" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -243,6 +235,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\markova\Documents\Trainingprojects\UserService\fancybox" />
       <recent name="C:\Users\markova\Documents\Trainingprojects\UserService" />
       <recent name="C:\Users\markova\Documents\Trainingprojects\UserService\scripts\service" />
@@ -261,17 +254,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="fancybox.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/UsersListTask/fancybox.html" />
     <configuration name="fancybox.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/UserService/fancybox.html" />
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/UsersListTask/index.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/UserService/index.html" />
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.fancybox.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.fancybox.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.fancybox.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.fancybox.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.fancybox.html" />
       </list>
     </recent_temporary>
   </component>
@@ -291,17 +290,19 @@
       <workItem from="1505197473094" duration="20716000" />
       <workItem from="1505224281803" duration="20000" />
       <workItem from="1505807694792" duration="6382000" />
+      <workItem from="1505839329857" duration="1353000" />
+      <workItem from="1505915880348" duration="17530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64627000" />
+    <option name="totallyTimeSpent" value="83510000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13646056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23362273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -329,7 +330,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1924307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23381568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -359,20 +360,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/component/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/component/UserList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -388,10 +375,9 @@
         <state relative-caret-position="544">
           <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
-            <marker date="1505814560953" expanded="true" signature="175:188" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="189:370" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="293:355" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="813:889" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="248:362" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:464" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:465" ph="..." />
           </folding>
         </state>
       </provider>
@@ -448,10 +434,9 @@
         <state relative-caret-position="425">
           <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
-            <marker date="1505814560953" expanded="true" signature="175:188" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="189:370" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="293:355" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="813:889" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="248:362" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:464" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:465" ph="..." />
           </folding>
         </state>
       </provider>
@@ -516,10 +501,9 @@
         <state relative-caret-position="170">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <marker date="1505814560953" expanded="true" signature="175:188" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="189:370" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="293:355" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="813:889" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="248:362" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:464" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:465" ph="..." />
           </folding>
         </state>
       </provider>
@@ -559,17 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fancybox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -613,63 +586,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/scripts/service/UserService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fancybox3/src/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1505750312000" expanded="true" signature="4945:4951" ph=" " />
+            <marker date="1505750312000" expanded="true" signature="4952:4958" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/component/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <marker date="1505810917456" expanded="true" signature="237:444" ph="..." />
-            <marker date="1505810917456" expanded="true" signature="291:432" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/component/Popup.js">
+    <entry file="file://$PROJECT_DIR$/fancybox3/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fancybox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
           <folding>
-            <marker date="1505814560953" expanded="true" signature="175:188" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="189:370" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="293:355" ph="..." />
-            <marker date="1505814560953" expanded="true" signature="813:889" ph="..." />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/component/UserList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <marker date="1505839089541" expanded="true" signature="258:270" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/component/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="360">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/component/UserList.js">
+    <entry file="file://$PROJECT_DIR$/scripts/component/User.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <marker date="1505215376876" expanded="true" signature="258:270" ph="..." />
+            <marker date="1505936582626" expanded="true" signature="237:444" ph="..." />
+            <marker date="1505936582626" expanded="true" signature="291:432" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/service/UserService.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/component/Popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <marker date="1505937213658" expanded="true" signature="248:362" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:464" ph="..." />
+            <marker date="1505937213658" expanded="true" signature="382:465" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

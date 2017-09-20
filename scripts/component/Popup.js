@@ -2,54 +2,26 @@ class Popup {
   constructor() {
     this.root = null;
     this.initDOM();
-    this.bindEvents();
   }
 
   initDOM() {
-    this.root = $(`
-        <div class="mdl-dialog" style="display:none;">
-          <div class="mdl-dialog__title">Информация</div>
-            <div class="mdl-dialog__content">
-              <table class="info"></table>
-            </div>
-        </div>
-      `)
-      .fancybox({
-        'transitionIn' :	'elastic',
-        'transitionOut' :	'elastic',
-        'speedIn' :	600,
-        'speedOut' :	200,
-        'hideOnContentClick' :	true
-      });
+    this.root =  $.fancybox;
   }
 
   show(info) {
-    this.updateView(info);
-  }
+    //вот этот код исправить в лучшем исполнении с lodash
+    let displayInfo = `<div class='custom-modal'><h5>Информация о пользователе</h5>`;
+    _.forEach(info, function (value, key) {
 
-  updateView(info) {
-    const containerInfo = this.root.find('.info');
-    containerInfo.empty();
-
-    let rowInfo;
-
-    _.forEach(info, function(value, key) {
-      rowInfo = $(`
-        <tr>
-          <td><b>${key}:</b></td>
-          <td>${value}</td>
-        </tr>
+      displayInfo = displayInfo.concat(`
+        <p>
+          <span><b>${key}:</b></span>
+          <span>${value}</span>
+        </p>
       `);
-
-      containerInfo.append(rowInfo);
     });
-
-    this.root.click();
+    displayInfo = displayInfo.concat(`</div>`);
+    this.root.open(displayInfo);
   }
 
-  bindEvents() {
-    this.root.find('button').on('click', () => {
-      this.root.close();
-    });
-  }
 }
