@@ -7,9 +7,9 @@ class Popup {
 
   initDOM() {
     this.root = $(`
-        <div class="mdl-dialog" style="display:none;">
-          <div class="mdl-dialog__title">Информация</div>
-            <div class="mdl-dialog__content">
+        <div class = "mdl-dialog" style="display:none;">
+          <div class = "mdl-dialog__title">Информация</div>
+            <div class = "mdl-dialog__content">
               <table class="info"></table>
             </div>
         </div>
