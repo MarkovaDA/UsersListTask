@@ -25,16 +25,22 @@ class App {
   }
 
   initPopup() {
-    this.popup = new Popup();
+    this.popup = new Popup({
+      'beforeShow': () => {
+        console.log('before show');
+      },
+      'animationEffect' : 'zoom'
+    });
+
     this.root.append(this.popup.root);
   }
 
   bindEvents() {
     //клик на пользователе -- отображение подробной информации по id
-    this.userList.on('SHOW_ITEM', (id) => {
-      //получаем описание пользователя по его id
-      this.userService.getUserById(id).then((info) => {
-        this.popup.show(info);
+    this.userList.on('SHOW_ITEM', (dataToDisplay) => {
+
+      this.userService.getUserById(dataToDisplay.id).then((info) => {
+         this.popup.show(dataToDisplay.pattern({'data': info}));
       }, (error) => {
         console.log(error);
       });

@@ -21,8 +21,8 @@ class UserList extends EventEmitter {
     this.userList.forEach((item) => {
       const childComponent = new User(item);
 
-      childComponent.on('SELECT_ITEM', (id) => {
-        this.emit('SHOW_ITEM', id);
+      childComponent.on('SELECT_ITEM', (dataToDisplay) => {
+        this.emit('SHOW_ITEM', dataToDisplay);
       });
 
       this.root.append(childComponent.root);

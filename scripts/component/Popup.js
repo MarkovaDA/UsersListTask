@@ -1,28 +1,24 @@
 class Popup {
-  constructor() {
+  constructor(props) {
+    this.popupProps = props;
     this.root = null;
 
     this.initDOM();
   }
 
   initDOM() {
-    this.root =  $.fancybox;
-  }
+    this.root = $.fancybox;
 
-  show(info) {
-    //вот этот код исправить в лучшем исполнении с lodash
-    let displayInfo = `<div class='custom-modal'><h5>Информация о пользователе</h5>`;
-    _.forEach(info, function (value, key) {
-
-      displayInfo = displayInfo.concat(`
-        <p>
-          <span><b>${key}:</b></span>
-          <span>${value}</span>
-        </p>
-      `);
+    _.mapKeys(this.popupProps,(value, key) => {
+      this.root.defaults[key] = value;
     });
-    displayInfo = displayInfo.concat(`</div>`);
-    this.root.open(displayInfo);
   }
 
+  show(htmlContent) {
+    this.root.open(htmlContent);
+  }
+
+  close() {
+    this.root.close();
+  }
 }
