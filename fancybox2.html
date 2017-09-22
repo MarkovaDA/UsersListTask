@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FancyBox</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--fancybox2-->
+    <script type="text/javascript" src="fancybox2/lib/jquery.mousewheel.pack.js"></script>
+    <link rel="stylesheet" href="fancybox2/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox2/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script> -->
+    <script>
+      $(document).ready(function(){
+        $('button').click(function () {
+          var modal = $.fancybox;
+          console.log('modal', modal);
+
+          modal.open({
+            content : 'Hi to everyone',
+            afterShow: function() {
+              console.log('modal has been shown');
+            },
+            openEffect : 'fade',
+            openSpeed : 'normal',
+            closeClick : 'true',
+            type : 'inline',
+            autoSize: false,
+            width: '30%',
+            height: '20%'
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+  <h1>Hello world</h1>
+  <button>Открыть диалог</button>
+</body>
+</html>

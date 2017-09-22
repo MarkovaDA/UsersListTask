@@ -2,6 +2,7 @@ class App {
   constructor(elem) {
     this.root = elem;
     this.userService = new UserService();
+    this.displayPattern = this.cacheDisplayPattern();
 
     this.loadUsers();
   }
@@ -26,10 +27,17 @@ class App {
 
   initPopup() {
     this.popup = new Popup({
-      'beforeShow': () => {
-        console.log('before show');
-      },
-      'animationEffect' : 'zoom'
+        afterShow: function() {
+          console.log('modal has been shown');
+        },
+        openEffect : 'fade',
+        openSpeed : 'fast',
+        closeClick : 'true',
+        type : 'inline',
+        autoSize: false,
+        width: '300px',
+        height: '150px',
+        css: 'text-align: center'
     });
 
     this.root.append(this.popup.root);
@@ -37,14 +45,39 @@ class App {
 
   bindEvents() {
     //клик на пользователе -- отображение подробной информации по id
-    this.userList.on('SHOW_ITEM', (dataToDisplay) => {
+    this.userList.on('SHOW_ITEM', (userId) => {
 
-      this.userService.getUserById(dataToDisplay.id).then((info) => {
-         this.popup.show(dataToDisplay.pattern({'data': info}));
+      this.userService.getUserById(userId).then((info) => {
+         //открытие popup
+         this.popup.show(this.displayPattern({'data': info}));
       }, (error) => {
         console.log(error);
       });
     });
+  }
+
+  //шаблон отображения информации о пользователе
+  cacheDisplayPattern() {
+    let pattern = `
+      <div class='custom-modal'>
+        <h5>Информация о пользователе</h5>
+          <table>
+            <% _.forEach(data, (value, key) => { %>
+              <tr>
+                <td>
+                  <b>
+                    <%- key %>:
+                  </b>
+                </td>
+                <td>
+                  <%- value %>  
+                </td>
+              </tr> 
+            <% }); %>
+          </table> 
+      </div>
+    `;
+    return _.template(pattern);
   }
 
 }

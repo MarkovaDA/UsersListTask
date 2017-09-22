@@ -1,6 +1,6 @@
 class Popup {
   constructor(props) {
-    this.popupProps = props;
+    this.popupProps = props;//custom popup options
     this.root = null;
 
     this.initDOM();
@@ -8,14 +8,10 @@ class Popup {
 
   initDOM() {
     this.root = $.fancybox;
-
-    _.mapKeys(this.popupProps,(value, key) => {
-      this.root.defaults[key] = value;
-    });
   }
 
   show(htmlContent) {
-    this.root.open(htmlContent);
+    this.root.open(htmlContent, this.popupProps);
   }
 
   close() {

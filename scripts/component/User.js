@@ -4,7 +4,6 @@ class User extends EventEmitter {
 
     this.user = userData;
     this.root = null;
-    this.displayPattern = this.cacheDisplayPattern();
 
     this.initDOM();
     this.bindEvents();
@@ -21,34 +20,9 @@ class User extends EventEmitter {
     `);
   }
 
-  //шаблон отображения информации о пользователе
-  cacheDisplayPattern() {
-    let pattern = `
-      <div class='custom-modal'>
-        <h5>Информация о пользователе</h5>
-        <ul>
-          <% _.forEach(data, (value, key) => { %>
-            <p>
-              <span>
-                <b>
-                  <%- key %>:
-                </b>
-              </span>
-              <span>
-                <%- value %>  
-              </span>
-            </p> 
-          <% }); %> 
-        </ul>
-      </div>
-    `;
-    return _.template(pattern);
-  }
-
   bindEvents() {
     this.root.on('click', () => {
-      const dataToDisplay = {'id': this.user.id, 'pattern': this.displayPattern};
-      this.emit('SELECT_ITEM', dataToDisplay);
+      this.emit('SELECT_ITEM', this.user.id);
     });
   }
 }
